@@ -1,6 +1,6 @@
 {
     "name": "joystick2tank",
-    "version": "0",
+    "version": "0.1.0",
     "description": "Converts X & Y co-ordinates from a joystick into Left and Right channels for use in tank-drive applications",
     "keywords": ["joystick", "tank", "robot"],
     "repository": {
