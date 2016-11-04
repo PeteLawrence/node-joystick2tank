@@ -2,7 +2,7 @@
 Takes X & Y co-ordinates from a joystick and converts them into Left and Right values for a tank-drive system.
 
 ### Usage
-```npm install node-joystick2tank```
+```npm install joystick2tank```
 
 ```javascript
 var j2t = require('joystick2tank');
