@@ -4,9 +4,8 @@ Takes X & Y co-ordinates from a joystick and converts them into Left and Right v
 ### Usage
 ```npm install node-joystick2tank```
 
-```
+```javascript
 var j2t = require('joystick2tank');
-
 var values = j2t(-30, 100);
 ```
 
