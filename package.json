@@ -1,6 +1,6 @@
 {
   "name": "joystick2tank",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Converts X & Y co-ordinates from a joystick into Left and Right channels for use in tank-drive applications",
   "keywords": [
     "joystick",
