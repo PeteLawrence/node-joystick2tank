@@ -23,15 +23,19 @@ var Joystick2Tank = function(opts) {
       y = y * -1;
     }
 
-    //Check that X is between -100 and 100
-    if (x > 100 || x < -100) {
-      throw new RangeError('X must be between -100 and 100');
+    //Check that X fits within the max range
+    if (x > module.options.maxX || x < module.options.maxX * -1) {
+      throw new RangeError('X must be between -' + module.options.maxX + ' and ' + module.options.maxX);
     }
 
-    //Check that Y is between -100 and 100
-    if (y > 100 || y < -100) {
-      throw new RangeError('Y must be between -100 and 100');
+    //Check that Y fits within the max range
+    if (y > module.options.maxY || y < module.options.maxY * -1) {
+      throw new RangeError('Y must be between -' + module.options.maxY + ' and ' + module.options.maxY);
     }
+
+    //Scale the X and Y values to be between -100 and 100
+    x = (x / module.options.maxX) * 100;
+    y = (y / module.options.maxY) * 100;
 
     //Invert x
     x = x * -1;
