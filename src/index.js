@@ -3,6 +3,11 @@ var defaults = require('defaults');
 var Joystick2Tank = function(opts) {
   var module = {};
 
+  /**
+   * Returns the default values
+   *
+   * @return {[type]} [description]
+   */
   module.getDefaults = function()
   {
     return {
@@ -14,6 +19,16 @@ var Joystick2Tank = function(opts) {
   };
 
 
+  /**
+   * Converts X and Y to L and R
+   *
+   * @link http://home.kendra.com/mauser/Joystick.html
+   *
+   * @param  double x X co-ordinate of the joystick
+   * @param  double y Y co-ordinate of the joystick
+   *
+   * @return object   Left and right values
+   */
   module.convert = function(x, y)
   {
     //Handle options
