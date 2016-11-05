@@ -7,14 +7,15 @@ var Joystick2Tank = function(opts) {
   {
     return {
       invertX: false,
-      invertY: true,
+      invertY: false,
       maxX: 100,
       maxY: 100
     };
   };
 
 
-  module.convert = function(x, y) {
+  module.convert = function(x, y)
+  {
     //Handle options
     if (module.options.invertX) {
       x = x * -1;
